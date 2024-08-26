@@ -13,6 +13,8 @@
 - ✅<b>CRC16 Error Checking:</b> Implements CRC16 checksum to ensure data integrity. <br>
 
 ## <span> 🔎 Tested Environment </span>
-![Serial](images/setup.png) <br>
+![Setup](images/setup.png) <br>
 <span> First of all if you're using Windows you need to install [Null-Modem Emulator](https://sourceforge.net/projects/com0com/) to see <i> active virtual pair ports on your computer <i> </span> <br>
+
 ## <span> 🛠️ Connection to first virtual port </span>
+![com_portopen](images/com_open.png) <br>
