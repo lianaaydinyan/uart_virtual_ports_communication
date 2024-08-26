@@ -1,20 +1,10 @@
 #include "uart.h"
 
-// int sendFrame(HANDLE uart_handle, UART_Frame frame, uint8_t TxBuer)
-// {
-//     // uint8_t buffer[TxBUFFER_SIZE];
-//     // buffer[0] = frame.start_bit;
-//     // buffer[1] = frame.data_bits;
-//     // buffer[6] = frame.parity_bit;
-//     // //buffer[7] = frame.stop_bit;
-
-//     printf("Sending frame...\n");
-//     DWORD bytesWritten;
-//     if (!WriteFile(uart_handle, buffer, sizeof(buffer), &bytesWritten, NULL))
-//     {
-//         printf("Error writing to UART. Error: %ld\n", GetLastError());
-//         return 1;
-//     }
-
-//     return 0;
-// }
+void fillTheFrame(char *TxBuffer, INFO_frame frame)
+{
+    snprintf(TxBuffer, TxBUFFER_SIZE, 
+             "\nPacket info -> CRC16:0x%04X\n, Elapsed Time:%.2f\n, Average Speed:%.2f\n", 
+             frame.crc_value, 
+             frame.elapsed_time, 
+             frame.avg_speed);
+}

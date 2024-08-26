@@ -29,6 +29,7 @@ int receiveData(HANDLE uart_handle, uint8_t* buffer, size_t buffer_size, INFO_fr
             return 1;
         }
     }
+
     gettimeofday(&end_time, NULL);
     frame->elapsed_time = (end_time.tv_sec - start_time.tv_sec) +
                         (end_time.tv_usec - start_time.tv_usec) / 1000000.0;

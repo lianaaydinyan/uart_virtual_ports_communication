@@ -17,7 +17,7 @@ uint16_t crc16(const uint8_t *data, size_t length)
     return crc;
 }
 
-uint16_t crc16_ibm(const uint8_t *data, size_t length)
+uint16_t crc16Ibm(const uint8_t *data, size_t length)
 {
     uint16_t crc = 0x0000;
     for (size_t i = 0; i < length; i++)
