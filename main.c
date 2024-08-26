@@ -19,17 +19,20 @@ int main()
         return 1;
     }
 
-    UART_Frame frame;
+    INFO_frame info;
     char RxBuffer[RxBUFFER_SIZE];
     char TxBuffer[TxBUFFER_SIZE] = {""};
      
     while (true)
     {
-        if (receiveData(uart_handle, RxBuffer, RxBUFFER_SIZE) == 0) 
+        if (receiveData(uart_handle, RxBuffer, data_size, &info) == 0) 
         {
-        printf("Sending frame...");
+                printf("Sending frame...");
         printf("%s \n", RxBuffer);
         DWORD bytesWritten;
+        printf("Elapsed time: %.6f seconds.\n", info.elapsed_time);
+        printf("Average transfer speed: %.2f Bps.\n", info.avg_speed);
+        printf("CRC16 value: 0x%04X.\n", info.crc_value);
         if (!WriteFile(uart_handle, TxBuffer, sizeof(TxBuffer) - 1, &bytesWritten, NULL))
         {
             printf("Error writing to UART. Error: %ld\n", GetLastError());
