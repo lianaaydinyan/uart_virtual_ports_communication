@@ -15,6 +15,7 @@
 ## <span> 🔎 Tested Environment </span>
 ![Setup](images/setup.png) <br>
 <span> First of all if you're using Windows you need to install [Null-Modem Emulator](https://sourceforge.net/projects/com0com/) to see <i> active virtual pair ports on your computer </i> </span> <br>
+<span> I will take the Virtual Pair 1 (COM4 and COM9) </span> <br>
 
 ## <span> 🛠️ Connection to first virtual port </span>
 ![com_portopen](images/com_open.png) <br>
@@ -25,6 +26,21 @@
 ## <span> 🏆 Connection to main (second) virtual port </span> <br>
 <span> Here we need to connect to our main virtual port, where we will receive the data. It's the environment where you're running your program. </span> <br>
 <span> So let's run it 🙏 </span> <br> 
+
 ![run](images/run_programm.png) <br>
 
+<span> So let's start the adventure and connect to seccond virtual port via hercules. </span> <br>
 
+![opennnn](images/com_open.png) <br>
+
+<span> Now I'm sending data <i>(which is some_data)</i> from COM9 port to COM4, and now let's return to COM4 port. </span> <br>
+
+<span> Now while execution I have this result.</span> <br>
+
+![running](images/com_opened.png) <br>
+
+## <span>  🏅 Let's see the final result </span> </br>
+
+![data_sending](images/send_data.png) <br>
+
+<span> Everything works properly, <b> congrats >_< </b> </span> <br>
