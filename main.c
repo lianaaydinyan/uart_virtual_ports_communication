@@ -1,6 +1,5 @@
 #include "uart.h"
 
-
 int main()
 {
     HANDLE uart_handle = openUART(DEVICE);
@@ -36,7 +35,7 @@ int main()
                 printf("Error writing to UART. Error: %ld\n", GetLastError());
                 return 1;
             }
-        }*
+        }
         else
             break;
     }
