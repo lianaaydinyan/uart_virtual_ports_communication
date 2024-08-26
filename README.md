@@ -20,7 +20,11 @@
 ![com_portopen](images/com_open.png) <br>
 
 <span>Here I am using [Hercules SETUP utility](https://www.hw-group.com/software/hercules-setup-utility), which is useful serial port terminal (<i> which we need rigth now </i>), UDP/IP terminal and TCP/IP Client Server terminal. <br>
-<i> <b>  Additional </b>You can also use Tera Term or Putty to connect to virtual com port <i> </span> <br> <br>
+<i> <b>  Additional </b>You can also use Tera Term or Putty to connect to virtual com port </i> </span> <br> <br>
 
-## <span> 🏆 Connection to main (second) virtual port </span>
+## <span> 🏆 Connection to main (second) virtual port </span> <br>
+<span> Here we need to connect to our main virtual port, where we will receive the data. It's the environment where you're running your program. </span> <br>
+<span> So let's run it 🙏 </span> <br> 
+![run](images/run_programm.png) <br>
+
 
