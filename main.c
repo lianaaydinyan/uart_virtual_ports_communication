@@ -20,19 +20,27 @@ int main()
     }
 
     UART_Frame frame;
-    uint8_t buffer[BUFFER_SIZE];
+    char RxBuffer[RxBUFFER_SIZE];
+    char TxBuffer[TxBUFFER_SIZE] = {""};
+     
     while (true)
     {
-        if (receiveData(uart_handle, buffer, BUFFER_SIZE) == 0)
+        if (receiveData(uart_handle, RxBuffer, RxBUFFER_SIZE) == 0) 
         {
-            frame = createUARTFrame(buffer[1], true, buffer[2]);
-            if (sendFrame(uart_handle, frame) != 0)
-                break;
+        printf("Sending frame...");
+        printf("%s \n", RxBuffer);
+        DWORD bytesWritten;
+        if (!WriteFile(uart_handle, TxBuffer, sizeof(TxBuffer) - 1, &bytesWritten, NULL))
+        {
+            printf("Error writing to UART. Error: %ld\n", GetLastError());
+            return 1;
+        }
         }
         else
             break;
     }
     CloseHandle(uart_handle);
     printf("UART device closed.\n");
+
     return 0;
 }
