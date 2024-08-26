@@ -14,10 +14,13 @@
 
 ## <span> 🔎 Tested Environment </span>
 ![Setup](images/setup.png) <br>
-<span> First of all if you're using Windows you need to install [Null-Modem Emulator](https://sourceforge.net/projects/com0com/) to see <i> active virtual pair ports on your computer <i> </span> <br>
+<span> First of all if you're using Windows you need to install [Null-Modem Emulator](https://sourceforge.net/projects/com0com/) to see <i> active virtual pair ports on your computer </i> </span> <br>
 
 ## <span> 🛠️ Connection to first virtual port </span>
 ![com_portopen](images/com_open.png) <br>
 
 <span>Here I am using [Hercules SETUP utility](https://www.hw-group.com/software/hercules-setup-utility), which is useful serial port terminal (<i> which we need rigth now </i>), UDP/IP terminal and TCP/IP Client Server terminal. <br>
-<i> <b>  Additional </b>You can also use Tera Term or Putty to connect to virtual com port <i> </span> <br>
+<i> <b>  Additional </b>You can also use Tera Term or Putty to connect to virtual com port <i> </span> <br> <br>
+
+## <span> 🏆 Connection to main (second) virtual port </span>
+
