@@ -18,3 +18,6 @@
 
 ## <span> 🛠️ Connection to first virtual port </span>
 ![com_portopen](images/com_open.png) <br>
+
+<span>Here I am using [Hercules SETUP utility](https://www.hw-group.com/software/hercules-setup-utility), which is useful serial port terminal (<i> which we need rigth now </i>), UDP/IP terminal and TCP/IP Client Server terminal. <br>
+<i> <b>  Additional </b>You can also use Tera Term or Putty to connect to virtual com port <i> </span> <br>
