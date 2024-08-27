@@ -35,5 +35,6 @@ int receiveData(HANDLE uart_handle, uint8_t* buffer, size_t buffer_size, INFO_fr
                         (end_time.tv_usec - start_time.tv_usec) / 1000000.0;
     frame->avg_speed = totalBytesRead / frame->elapsed_time;
     frame->crc_value = crc16(buffer, totalBytesRead);
+    frame->data_len = totalBytesRead;
     return 0;
 }

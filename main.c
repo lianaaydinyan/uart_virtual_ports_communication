@@ -26,8 +26,8 @@ int main()
     {
         if (receiveData(uart_handle, RxBuffer, data_size, &info) == 0) 
         {
-        printf("Sending packet...");
-        printf("%s \n", RxBuffer);
+        printf("Sending data packet . . . ");
+        printf("* %s *\n", RxBuffer);
         DWORD bytesWritten;
         fillTheFrame(TxBuffer, info);
             if (!WriteFile(uart_handle, TxBuffer, sizeof(TxBuffer), &bytesWritten, NULL))
@@ -35,6 +35,7 @@ int main()
                 printf("Error writing to UART. Error: %ld\n", GetLastError());
                 return 1;
             }
+            clearTxBuffer(TxBuffer,TxBUFFER_SIZE);
         }
         else
             break;
