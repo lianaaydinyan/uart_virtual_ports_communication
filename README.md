@@ -41,6 +41,6 @@
 
 ## <span>  🏅 Let's see the final result </span> </br>
 
-![data_sending](images/send_data.png) <br>
+![data_sending](images/result.png) <br>
 
 <span> Everything works properly, <b> congrats >_< </b> </span> <br>
