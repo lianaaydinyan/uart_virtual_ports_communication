@@ -19,7 +19,7 @@ int main()
     }
 
     INFO_frame info;
-    char RxBuffer[RxBUFFER_SIZE] = {""};
+    unsigned char RxBuffer[RxBUFFER_SIZE] = {""};
     char TxBuffer[TxBUFFER_SIZE] = {""};
      
     while (true)

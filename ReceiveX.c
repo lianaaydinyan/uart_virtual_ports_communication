@@ -15,12 +15,12 @@ int receiveData(HANDLE uart_handle, uint8_t* buffer, size_t buffer_size, INFO_fr
             if (bytesRead > 0)
             {
                 totalBytesRead += bytesRead;
-                printf("Received %lu bytes of data.\n", bytesRead);
+                printf("Received %ld bytes of data.\n", bytesRead);
             }
         }
         else if (totalBytesRead == 0)
         {
-            printf("Error reading from UART. data : %lu\n", totalBytesRead );
+            printf("Error reading from UART. data : %u\n", totalBytesRead );
             return 1;     
         }
         else
