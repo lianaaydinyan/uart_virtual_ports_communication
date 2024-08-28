@@ -20,7 +20,7 @@ int receiveData(HANDLE uart_handle, uint8_t* buffer, size_t buffer_size, INFO_fr
         }
         else if (totalBytesRead == 0)
         {
-            printf("Error reading from UART. data : %lld\n", totalBytesRead );
+            printf("Error reading from UART. data : %lu\n", totalBytesRead );
             return 1;     
         }
         else

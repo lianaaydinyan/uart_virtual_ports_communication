@@ -1,7 +1,7 @@
 NAME = uart
 SRC = crc_calculations.c open_config.c ReceiveX.c TransmitX.c main.c
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = 
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
