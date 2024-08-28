@@ -35,7 +35,10 @@ int main()
                 printf("Error writing to UART. Error: %ld\n", GetLastError());
                 return 1;
             }
-            clearTxBuffer(TxBuffer,TxBUFFER_SIZE);
+            
+            memset(TxBuffer, 0, TxBUFFER_SIZE);            
+            memset(RxBuffer, 0, RxBUFFER_SIZE);
+
         }
         else
             break;

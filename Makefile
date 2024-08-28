@@ -1,3 +1,4 @@
+HEADER = uart.h
 NAME = uart
 SRC = crc_calculations.c open_config.c ReceiveX.c TransmitX.c main.c
 CC = gcc

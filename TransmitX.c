@@ -8,8 +8,3 @@ void fillTheFrame(char *TxBuffer, INFO_frame frame)
              frame.avg_speed,
              frame.data_len);
 }
-
-void clearTxBuffer(char *TxBuffer, size_t size)
-{
-    memset(TxBuffer, 0, size);
-}

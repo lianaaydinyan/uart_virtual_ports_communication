@@ -37,11 +37,11 @@ int configureUART(HANDLE uart_handle)
 int setUARTTimeouts(HANDLE uart_handle)
 {
     COMMTIMEOUTS timeouts = {0};
-    timeouts.ReadIntervalTimeout = 50;
-    timeouts.ReadTotalTimeoutConstant = 50;
-    timeouts.ReadTotalTimeoutMultiplier = 10;
-    timeouts.WriteTotalTimeoutConstant = 50;
-    timeouts.WriteTotalTimeoutMultiplier = 10;
+    timeouts.ReadIntervalTimeout = 150;
+    timeouts.ReadTotalTimeoutConstant = 150;
+    timeouts.ReadTotalTimeoutMultiplier = 30;
+    timeouts.WriteTotalTimeoutConstant = 150;
+    timeouts.WriteTotalTimeoutMultiplier = 30;
 
     if (!SetCommTimeouts(uart_handle, &timeouts))
     {

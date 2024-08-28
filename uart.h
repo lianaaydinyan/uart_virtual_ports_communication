@@ -36,7 +36,6 @@ HANDLE      openUART(const char* device);
 int         configureUART(HANDLE uart_handle);
 int         setUARTTimeouts(HANDLE uart_handle);
 uint16_t    crc16(uint8_t *buffer, size_t length);
-void        clearTxBuffer(char *TxBuffer, size_t size);
 void        fillTheFrame(char *TxBuffer, INFO_frame frame);
 uint16_t    crc16Ibm(const uint8_t *data, size_t length);
 int         receiveData(HANDLE uart_handle, uint8_t* buffer, size_t buffer_size, INFO_frame *frame);
